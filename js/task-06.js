@@ -11,8 +11,7 @@ const onInputElBlur = event => {
 };
 
 const onInputElFocus = () => {
-	inputEl.classList.remove('invalid');
-	inputEl.classList.remove('valid');
+	inputEl.classList.remove('invalid', 'valid');
 };
 
 inputEl.addEventListener('blur', onInputElBlur);
