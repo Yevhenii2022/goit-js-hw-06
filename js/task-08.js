@@ -12,7 +12,7 @@ function handleLoginFormElSubmit(event) {
 	} = event.currentTarget;
 
 	if (email.value === '' || password.value === '') {
-		alert('Please fill in all the fields!');
+		return alert('Please fill in all the fields!');
 	} else {
 		user.email = email.value;
 		user.password = password.value;
